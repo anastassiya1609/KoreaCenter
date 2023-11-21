@@ -61,13 +61,13 @@ h2 {
   color: #E2D8D8;
 }
 header{
-  position: absolute;
-  background: none;
+  position: fixed;
+  z-index: 1100;
   width: 100%;
   margin:0;
   padding: 0;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 header a{
@@ -88,7 +88,6 @@ header button{
   line-height: 18px;
   background:none;
   box-shadow: 0px 4px 4px 0px #98050C;
-  margin-left: 1rem;
 }
 header button:hover {
 background-color: #FFFFFF;
@@ -107,8 +106,12 @@ header button:active{
   margin-top: 120px;
   margin-bottom: 120px;
 }
+#banner a{
+  text-decoration: none;
+}
 
 #banner button{
+  display: flex;
   border-radius: 10px;
   padding: 20.1px 75.5px 20.1px 75.5px;
   font-weight: 600;
@@ -180,6 +183,7 @@ section {
 }
 .text_white {
   color: #ffffff;
+  text-align: justify;
 }
 .text_silver {
   color: #0000008f;
@@ -189,13 +193,18 @@ section {
 }
 .icon_basic {
   width: 40px;
+  height: auto;
 }
 .border_red {
   border-left: 1px solid #ee3639;
 }
+.border_bottom_red{
+  border-bottom: 1px solid #ee3639;
+  padding-bottom: 15px;
+}
 .icon_flag {
   width: 40px;
-  height: 40px;
+  height: auto;
   padding-right: 10px;
 }
 .services_icon_avito {
@@ -216,6 +225,12 @@ section {
 .block_height {
   min-height: 83px;
 }
+#telegram a{
+  cursor: pointer;
+}
+#telegram img:hover{
+  background-color:  #ffffff35;
+}
 
 .text_line-through {
   text-decoration: line-through 2px #ee363980;
@@ -232,9 +247,11 @@ section {
 .gap_row_min {
   row-gap: 15px;
 }
-.price__button {
-  /* min-width: 340px;
-  min-height: 52px; */
+#help p{
+  font-weight: 500;
+}
+#price button {
+  
   border-radius: 10px;
   border: 2px solid #ee3639;
   padding: 17px 55px  17px 55px ;
@@ -245,12 +262,12 @@ section {
   color: #ee3639;
   cursor: pointer;
 }
-.price__button:hover {
+#price button:hover {
   background-color: #ee3639;
   color: #fff;
   box-shadow: 0px 4px 12.300000190734863px 0px #a22c2e80;
 }
-.price__button:active {
+#price button:active {
   box-shadow: 0px 4px 4px 0px #00000040 inset;
 }
 .questions_padding {
@@ -359,12 +376,13 @@ form{
   }
 
  }
- form  p{
-  font-size: 10px;
+ form > p{
+  font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   color: #000000ca;
  }
+
  form label{
   font-size: 12px;
   font-weight: 400;
@@ -391,19 +409,19 @@ form{
   border: 1px solid #000000ca;
   padding: 10px;
   margin: 0;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 14px;
   color: #00000080;
  }
  form select  {
-  max-height: 35.6px;
+  max-height: 39.2px;
   background: none;
   border-radius: 10px;
   border: 1px solid #000000ca;
   padding: 10px;
   margin: 0;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 14px;
   color: #00000080;
@@ -428,6 +446,7 @@ input[type='radio'] {
   width: 18px;
   appearance: none;
   outline: none;
+  margin-right: 15px;
 }
 
 input[type='radio']::before {
@@ -455,59 +474,291 @@ input[type='radio']:checked::after {
   transform: translate(-50%, -50%);
   visibility: visible;
   box-shadow: 0px 4px 4px 0px #00000040 inset;
-
 }
 footer img{
   max-width: 40px;
+}
+.items_center{
+  display: flex;
+  align-items: center;
+}
  
+.content_center{
+  display: flex;
+  justify-content: center;
 }
 
 footer{
   padding-top: 33px;
   padding-bottom:33px ;
 }
-@media(max-width:546px){
-  .container{
-    max-width: 90%;
-  }
-  }
+#visa_countries .row{
+  row-gap: 30px;
+}
+
+
+
 @media(max-width:1200px){
   #offer img{
     display: none;
   }
+  header button{
+    padding: 9px 25px 9px 25px;
+    font-size: 15px;
+
+  }
 }
+#services p{
+  text-align: center;
+}
+
+
+
 @media(max-width:992px){
   .toolbar_name{
     display: none;
   }
   form{
-    width: 70%;
+    width: 60%;
   }
+  #banner h1{
+    text-align: center;
+  }
+  .button_center_media{
+    display: flex;
+    justify-content: center;
+
+  }
+  #services .row{
+    justify-content: center;
+  }
+  #services .section__title{
+    text-align: center;
+  }
+  #services p{
+    text-align: center;
+  }
+  #price p{
+    text-align: center;
+  }
+  #price .row{
+    justify-content: center;
+  }
+  #price .section__title{
+    text-align: center;
+  }
+  .form__title{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+  
+ 
+ 
+  
 
 
 }
 @media(max-width:768px){
-  header button{
-    margin-top: 5%;
+  .section__title{
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
   }
+ 
+  #banner button{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
+  header .content_center{
+    justify-content: start;
+  }
+  #advantages img{
+    width: 50px;
+  }
+  section .row  {
+    display: flex;
+    justify-content: center;
+  }
+  .content_center_media{
+    display: flex;
+    justify-content: center;
+  }
+  .icon_flag{
+    width: 50px;
+  }
+  #visa_countries p{
+    text-align: center;
+  }
+  #help p{
+    text-align: center;
+  }
+  .icon_basic{
+    width: 50px;
+  }
+  #help .text_big{
+    font-size: 24px;
+  }
+  form{
+    width: 80%;
+  }
+  
+
 }
 @media(max-width:576px){
   #banner h1{
     font-size: 40px;
     line-height: 50px;
   }
-  header a{
-    display: none;
-  }
   header button{
-    margin-left: 0;
+    padding: 9px 10px 9px 10px;
   }
-  #banner button{
+  #price .text_basic{
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #price .text_big{
     font-size: 20px;
     line-height: 25px;
   }
+  #price button{
+    padding: 9px 25px 9px 25px;
+    font-size: 18px;
+
+  }
+  .form__title{
+    font-size: 25px;
+  }
+  
+
+ 
+  
   form{
     width: 90%;
   }
+  .container{
+    max-width: 90%;
+  }
+  #banner button{
+  padding: 15px 20px 15px 20px;
 
+    
+  }
+
+
+}
+.nav-bar {
+	position: fixed;
+	top: 0;
+	right: 100%;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: position 2.9s;
+	-webkit-transition: position 2.9s;
+	-moz-transition: position 2.9s;
+	-ms-transition: position 2.9s;
+	-o-transition: position 2.9s;
+}
+.nav_name{
+  position: absolute;
+  width: auto;
+}
+
+.toggle {
+	left: 0;
+	box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+.toggle-menu {
+	background-color: rgba(188, 16, 16, 0.06);
+	position: fixed;
+	top: 18px;
+	right: 20px;
+	width: 40px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    padding: 2px 2px 2px 4px;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.line {
+	width: 100%;
+	height: 3px;
+	border-radius: 5px;
+	background-color: #fff;
+	transition: transform 0.2s ease-out;
+	-webkit-transition: transform 0.2s ease-out;
+	-moz-transition: transform 0.2s ease-out;
+	-ms-transition: transform 0.2s ease-out;
+	-o-transition: transform 0.2s ease-out;
+}
+
+.toggle .line1 {
+	background-color: #ffffff;
+	transform: scale(0.8) rotateZ(-45deg) translate(-8px, 5px);
+}
+
+.toggle .line2 {
+	display: none;
+}
+
+.toggle .line3 {
+	background-color: #ffffff;
+	transform: scale(0.8) rotateZ(45deg) translate(-8px, -5px);
+}
+
+
+
+.nav-list {
+	list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.nav-list-item {
+	text-align: center;
+	padding: 30px 0;
+  border-bottom: 1px solid #ffffff83;
+}
+
+.nav-link {
+  width: 100%;
+	color: #ffffff;
+	font-size: 22px;
+	text-decoration: none;
+	position: relative;
+  padding: 30px 0;
+}
+
+.nav-link::before {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #fff;
+	transform: scaleX(0);
+	transition: transform 0.4s ease-in-out;
+	transform-origin: left;
+	-webkit-transition: transform 0.4s ease-in-out;
+	-moz-transition: transform 0.4s ease-in-out;
+	-ms-transition: transform 0.4s ease-in-out;
+	-o-transition: transform 0.4s ease-in-out;
+}
+
+.nav-link:hover::before {
+	transform: scaleX(1);
 }

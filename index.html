@@ -14,33 +14,62 @@
 <!-- ctr + d    дублирование кода-->
 
 <body class="page">
-    <header>
+    <header class="bg_gradient">
         <div class="container">
             <div class="row  align-items-center">
-                <div class="col-lg-2 col-md-0"><p class="toolbar_name" href="#">Виза <br>в Южную Корею</p></div>
+                <div class="col-lg-2 col-md-0">
+                    <p class="toolbar_name"> Виза <br>в Южную Корею</p>
+                </div>
                 <div class="col-lg-7 col-md-9">
-                    <div class="row gx-5 text_center">
-                        <div class="col-3"><a href="#">О нас</a></div>
-                        <div class="col-3"><a href="#">Преимущества</a></div>
+                    <div class="row  text_center d-none d-md-flex">
+                        <div class="col-3"><a href="#statistiсs">О нас</a></div>
+                        <div class="col-3"><a href="#advantages">Преимущества</a></div>
                         <div class="col-3"><a href="#">Отзывы</a></div>
-                        <div class="col-3"><a href="#">Контакты</a></div>
+                        <div class="col-3"><a href="#contact">Контакты</a></div>
+                    </div>
+                    <nav class="header__nav nav-bar bg_gradient d-md-none">
+                        <div class="toggle-menu ">
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                            <div class="line line3"></div>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav-list-item"><a href="" class="nav-link">О нас</a></li>
+                            <li class="nav-list-item"><a href="" class="nav-link">Преимущества</a></li>
+                            <li class="nav-list-item">
+                                <a href="" class="nav-link">Отзывы</a>
+                            </li>
+                            <li class="nav-list-item"><a href="" class="nav-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3 col-7">
+                    <div>
+                        <a href="#form"><button>Задать вопрос</button></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3"><button>Задать вопрос</button></div>
             </div>
 
         </div>
-        
+
     </header>
     <section id="offer" class="py-5 bg_gradient">
         <div class="container">
-            <div class="row">
+            <div class="row  ">
                 <div class="col-xl-6 col-lg-12" id="banner">
-                    <div class="row>">
-                        <div class="col-md-12">
+                    <div class="row  ">
+                        <div class="col-md-12 gap_row_max">
                             <h1>Оформление Визы <br>В Южную Корею </h1>
                         </div>
-                        <div class="col-md-12"><button>Оставить заявку</button></div>
+                        <div class="col-12">
+                            <div class="row button_center_media">
+                                <div class="col-8">
+                                    <div class="button_center_media">
+                                        <a href="#form"><button>Оставить заявку</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -61,47 +90,48 @@
                 <div class="col-12 ">
                     <h2 class="section__title">Почему выбирают нашу компанию?</h2>
                 </div>
-                <div class="row justify-content-around gap_row_min">
-                    <div class="col-md-4 col-xs-12">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-2 col-md-3  col-2"><img class="advantages__icon_mark" src="image\mark.png"></div>
-                            <div class="col-lg-10 col-md-9  col-10">
+                <div class="row justify-content-around gap_row_max">
+                    <div class="col-md-4 col-8">
+                        <div class="row  ">
+                            <div class="col-lg-2 col-3  "><img class="advantages__icon_mark" src="image\mark.png"></div>
+                            <div class="col-lg-10 col-9">
                                 <div class="row gy-2">
                                     <div class="col-12">
                                         <h2>Гарантия</h2>
                                     </div>
-                                    <div class="col-12">
-                                        <p class="text_small">Даем гарантию<br> на наши услуги</p>
+                                    <div class="col-md-7 c">
+                                        <p class="text_small">Даем гарантию на наши услуги</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12">
-                        <div class="row">
-                            <div class="col-lg-2 col-md-3 col-2"><img class="advantages__icon_money" src="image\money.png"></div>
-                            <div class="col-lg-10 col-md-9 col-10">
+                    <div class="col-md-4 col-8">
+                        <div class="row  ">
+                            <div class="col-lg-2 col-3"><img class="advantages__icon_money" src="image\money.png"></div>
+                            <div class="col-lg-10 col-9">
                                 <div class="row gy-2">
                                     <div class="col-12">
                                         <h2>Цена</h2>
                                     </div>
-                                    <div class="col-12">
-                                        <p class="text_small">Лучшая цена и качество<br> услуг на рынке</p>
+                                    <div class="col-md-9">
+                                        <p class="text_small">Лучшая цена и качество услуг на рынке</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12">
-                        <div class="row">
-                            <div class="col-lg-2 col-md-3 col-2"><img class="advantages__icon_visa" src="image\visa_card.png"></div>
-                            <div class="col-lg-10 col-md-9 col-10">
+                    <div class="col-md-4 col-8">
+                        <div class="row  ">
+                            <div class="col-lg-2 col-3"><img class="advantages__icon_visa" src="image\visa_card.png">
+                            </div>
+                            <div class="col-lg-10 col-9">
                                 <div class="row gy-2">
                                     <div class="col-12">
                                         <h2>Оформление</h2>
                                     </div>
                                     <div class="col-12">
-                                        <p class="text_small">Оформление визы без стресса<br> и помощь в адаптации в ЮК
+                                        <p class="text_small">Оформление визы без стресса и помощь в адаптации в ЮК
                                         </p>
                                     </div>
                                 </div>
@@ -114,50 +144,50 @@
 
     <section id="statistiсs" class="py-5">
         <div class="container">
-            <div class="row">
+            <div class="row  ">
                 <div class="col-12">
                     <h2 class="section__title text_red">Наша компания помогает с получением<br> виз в Южную Корею c 2019
                         года</h2>
                 </div>
-                <div class="row gap_row_min">
-                    <div class="col-md-6 col-xs-12">
-                        <div class="row  gx-4">
-                            <div class="col-md-4 col-7">
+                <div class="row gap_row_max">
+                    <div class="col-md-6">
+                        <div class="row   gap_colum_max">
+                            <div class="col-xl-4 col-7">
                                 <p class="text_basic">Успешно одобреных K-ETA</p>
                             </div>
-                            <div class="col-5">
+                            <div class="col-3">
                                 <p class="text_basic text_red ">97.5 %</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="row gx-4">
-                            <div class="col-md-4 col-7">
+                        <div class="row    gap_colum_max">
+                            <div class="col-xl-4 col-7">
                                 <p class="text_basic">Отказы в получении K-ETA</p>
                             </div>
-                            <div class="col-5">
+                            <div class="col-3">
                                 <p class="text_basic text_red">2.5 %</p>
                             </div>
                         </div>
 
                     </div>
                     <div class="col-md-6">
-                        <div class="row gx-4">
-                            <div class="col-md-4 col-7">
+                        <div class="row    gap_colum_max">
+                            <div class="col-xl-4 col-7">
                                 <p class="text_basic">Успешно одобреных туристических виз</p>
                             </div>
-                            <div class="col-5">
+                            <div class="col-3">
                                 <p class="text_basic text_red">100 %</p>
                             </div>
                         </div>
 
                     </div>
                     <div class="col-md-6">
-                        <div class="row gx-4">
-                            <div class="col-md-4 col-7">
+                        <div class="row    gap_colum_max">
+                            <div class="col-xl-4 col-7">
                                 <p class="text_basic">Отказы в получении туристической визы</p>
                             </div>
-                            <div class="col-5">
+                            <div class="col-3">
                                 <p class="text_basic text_red">0 %</p>
 
                             </div>
@@ -168,14 +198,14 @@
         </div>
     </section>
 
-    <section id="telegram" class="bg_red">
+    <section id="telegram" class="bg_red py-4">
         <div class="container bg_red">
-            <div class="row py-2 align-items-center">
+            <div class="row align-items-center gy-4 gx-5  ">
                 <div class="col-md-10">
                     <p class="text_basic text_white">Ведем канал в Telegram с 12 марта 2020 года, где регулярно
-                        публикуем актуальную информацию по визе G1</p>
+                        публикуем актуальную информацию по визе G1 </p>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1 col-2">
                     <a href="https://t.me/prosto_visa"><img class="icon_basic" src="image\telegram.png"></a>
                 </div>
             </div>
@@ -184,16 +214,15 @@
 
     <section id="application-methods" class="bg_silver py-5">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-12">
                     <h2 class="section__title">Два способа оформления</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 border_red mb-4">
+                <div class="row gap_row_max">
+                    <div class="col-md-6 border_red">
                         <div class="row gy-3">
                             <div class="col-md-12">
-                                <h2 class="text_red text_big ">K-ETA<span class="text_small"> (разрешение на въезд)
-                                </h2>
+                                <h2 class="text_red text_big ">K-ETA<span class="text_small"> (разрешение на въезд)</h2>
                             </div>
                             <div class="col-md-9 ">
                                 <p class="text_small">Дается на <span class="text_red">3 года</span>
@@ -202,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 border_red mb-4">
+                    <div class="col-md-6 border_red">
                         <div class="row gy-3">
                             <div class="col-md-12">
                                 <h2 class="text_red text_big">Туристическая виза </h2>
@@ -228,17 +257,19 @@
                 <div class="row ">
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-md-12 mb-4">
-                                <div class="row gy-2">
-                                    <div class="col-md-12"><img class=icon_flag src="image\russia.png "></div>
+                            <div class="col-md-12 border_bottom_red">
+                                <div class="row">
+                                    <div class="col-md-12 content_center_media"><img class=icon_flag
+                                            src="image\russia.png "></div>
                                     <div class="col-md-8">
                                         <p class="text_basic">Граждане России могут оформить: К-ЕТА и Тур.визу</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 mb-4">
-                                <div class="row gy-2">
-                                    <div class="col-md-12"><img class=icon_flag src="image\kazakhstan.png"></div>
+                            <div class="col-md-12 border_bottom_red">
+                                <div class="row">
+                                    <div class="col-md-12 content_center_media"><img class=icon_flag
+                                            src="image\kazakhstan.png"></div>
                                     <div class="col-md-8 ">
                                         <p class="text_basic">Граждане
                                             Казахстана, также могут оформить: К-ЕТА и Тур.визу</p>
@@ -249,23 +280,24 @@
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-md-12 mb-4">
-                                <div class="row gy-2">
-                                    <div class="col-md-12"><img class=icon_flag src="image\ukraine.png"></div>
-                                    <div class="col-md-8">
+                            <div class="col-md-12 border_bottom_red">
+                                <div class="row ">
+                                    <div class="col-md-12 content_center_media"><img class=icon_flag
+                                            src="image\ukraine.png"></div>
+                                    <div class="col-md-8 ">
                                         <p class="text_basic">Граждане
                                             Украины, могут оформить только Тур.визу</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 mb-4">
-                                <div class="row gy-2">
-                                    <div class="col-md-12">
+                            <div class="col-md-12 border_bottom_red">
+                                <div class="row ">
+                                    <div class="col-md-12 content_center_media">
                                         <img class=icon_flag src="image\tajikistan.png">
                                         <img class=icon_flag src="image\uzbekistán.png">
                                         <img class=icon_flag src="image\kyrgyzstan.png">
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-12 ">
                                         <p class="text_basic">Граждане
                                             Таджикистана, Узбекистана и Кыргызстана, не могут оформить ни К-ЕТА, ни
                                             Тур.визу</p>
@@ -289,29 +321,30 @@
                     <div class="col-md-12">
                         <p class="text_big">Готовы вам помочь:</p>
                     </div>
-                    <div class="col-md-12 pt-4">
-                        <div class="row gy-3">
-                            <div class="col-md-4">
+                    <div class="col-md-12 pt-5">
+                        <div class="row gap_row_max">
+                            <div class="col-md-4 col-7">
                                 <div class="row align-items-center">
-                                    <div class="col-auto"><img class="icon_basic" src="image\business.png"> </div>
-                                    <div class="col-10">
-                                        <p class="text_basic text_bold">Найти работу</p>
+                                    <div class="col-lg-2 col-4"><img class="icon_basic" src="image\business.png"> </div>
+                                    <div class="col-lg-10 col-8">
+                                        <p class="text_basic">Найти работу</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-7">
                                 <div class="row align-items-center">
-                                    <div class="col-auto"><img class="icon_basic" src="image\house.png"> </div>
-                                    <div class="col-10">
-                                        <p class="text_basic text_bold">Арендовать жилье</p>
+                                    <div class="col-lg-2 col-4"><img class="icon_basic" src="image\house.png"> </div>
+                                    <div class="col-lg-10 col-8">
+                                        <p class="text_basic">Арендовать жилье</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-7">
                                 <div class="row align-items-center">
-                                    <div class="col-auto"><img class="icon_basic" src="image\credit-card.png"> </div>
-                                    <div class="col-10">
-                                        <p class="text_basic text_bold">Оформить банковские карты</p>
+                                    <div class="col-lg-2 col-4"><img class="icon_basic" src="image\credit-card.png">
+                                    </div>
+                                    <div class="col-lg-10 col-8">
+                                        <p class="text_basic">Оформить банковские карты</p>
                                     </div>
                                 </div>
                             </div>
@@ -328,7 +361,7 @@
                 <div class="col-12">
                     <h2 class="section__title">Аналоги популярных сервисов</h2>
                 </div>
-                <div class="row align-items-center gy-3">
+                <div class="row align-items-center gap_row_max">
                     <div class="col-lg-4 col-12">
                         <div class="row  gy-3 ">
                             <div class="col-md-12">
@@ -339,8 +372,8 @@
                                     <div class="col-auto"><img class="services_icon" src="image\karrot.png"></div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
-                                <p class="text_small">Приложение для покупки вещей с рук</p>
+                            <div class="col-lg-8 ">
+                                <p class="text_basic">Приложение для покупки вещей с рук</p>
                             </div>
                         </div>
                     </div>
@@ -355,8 +388,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
-                                <p class="text_small ">Приложение для покупки вещей и продуктов</p>
+                            <div class="col-lg-9 ">
+                                <p class="text_basic ">Приложение для покупки вещей и продуктов</p>
                             </div>
                         </div>
                     </div>
@@ -371,8 +404,8 @@
                                     <div class="col-auto"><img class="services_icon" src="image\maps.png"></div>
                                 </div>
                             </div>
-                            <div class="col-md-5 ">
-                                <p class="text_small ">Приложение навигатор</p>
+                            <div class="col-lg-7 ">
+                                <p class="text_basic ">Приложение навигатор</p>
                             </div>
                         </div>
                     </div>
@@ -387,112 +420,80 @@
                 <div class="col-12">
                     <h2 class="section__title">Варианты наших услуг</h2>
                 </div>
-                <div class="row gap_colum_max">
-                    <div class="col">
-                        <div class="row border_shadow gap_row_max p-4 mb-4">
-                            <div class="col-md-10">
-                                <div class="row gap_row_min">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <p class="text_big">Минимальный</p>
+                <div class="row justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-11">
+                                <div class="row border_shadow gap_row_max p-4 mb-4">
+                                    <div class="col-md-10">
+                                        <div class="row gap_row_min">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="text_big">Минимальный</p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <p class="text_small text_silver text_line-through">12 000₸ (KZT)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="text_big">9 900 ₸ (KZT)</p>
+                                            </div>
                                         </div>
-                                        <div class="col-md-12">
-                                            <p class="text_small text_silver text_line-through">12 000₸ (KZT)</p>
-                                        </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <p class="text_big">9 900 ₸ (KZT)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="row gap_row_min">
-                                    <div class="col-md-12">
-                                        <p class="text_basic">Подача заявки K-ETA</p>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <p class="text_basic">Консультация</p>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <p class="text_basic">Бронь отеля</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12"><button class="price__button">Оставить заявку</button></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row border_shadow gap_row_max p-4 mb-4">
-                            <div class="col-md-10">
-                                <div class="row gap_row_min">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <p class="text_big">Оптимальный</p>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <p class="text_small text_silver text_line-through">25 000 ₸ (KZT)</p>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <p class="text_big">19 900 ₸ (KZT)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="row gap_row_min">
-                                    <div class="col-md-12">
-                                        <p class="text_basic">Идеальный вариант, если вы хотите без рисков пройти
-                                            таможню в Корее</p>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <p class="text_basic">Подача заявки K-ETA</p>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <p class="text_basic">Консультация</p>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <p class="text_basic">Бронь отеля</p>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <p class="text_basic">Маршрутный лист</p>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <p class="text_basic">Бронь обратного билета</p>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <p class="text_basic">Помощь в прохождении таможни</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12"><button class="price__button">Оставить заявку</button></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row border_shadow gap_row_max p-4">
-                            <div class="col-md-10">
-                                <div class="row gap_row_min">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <p class="text_big">Максимальный</p>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <p class="text_small text_silver text_line-through">50 000 ₸ (KZT)</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-12">
-                                        <p class="text_big">39 900 ₸ (KZT)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="row gap_row_max">
-                                    <div class="col-12">
+                                    <div class="col-md-10">
                                         <div class="row gap_row_min">
                                             <div class="col-md-12">
-                                                <p class="text_basic">Индивидуальная работа</p>
+                                                <p class="text_basic">Подача заявки K-ETA</p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="text_basic">Консультация</p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="text_basic">Бронь отеля</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 button_center_media">
+                                        <button>Оставить заявку</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="row">
+                            <div class="col-11">
+                                <div class="row border_shadow gap_row_max p-4 mb-4">
+                                    <div class="col-md-10">
+                                        <div class="row gap_row_min">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="text_big">Оптимальный</p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <p class="text_small text_silver text_line-through">25 000 ₸ (KZT)
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <p class="text_big">19 900 ₸ (KZT)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="row gap_row_min">
+                                            <div class="col-md-12">
+                                                <p class="text_basic">Идеальный вариант, если вы хотите без рисков
+                                                    пройти
+                                                    таможню в Корее</p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="text_basic">Подача заявки K-ETA</p>
                                             </div>
                                             <div class="col-md-12">
                                                 <p class="text_basic">Консультация</p>
@@ -511,26 +512,82 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-11">
-                                        <div class="row gap_row_min px-3">
-                                            <div class="col-md-12">
-                                                <p class="text_basic  ">+трансфер с аэропорта </p>
+                                    <div class="col-md-12 button_center_media"><button>Оставить заявку</button></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-11">
+                                <div class="row border_shadow gap_row_max p-4">
+                                    <div class="col-md-10">
+                                        <div class="row gap_row_min">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="text_big">Максимальный</p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <p class="text_small text_silver text_line-through">50 000 ₸ (KZT)
+                                                    </p>
+                                                </div>
+
                                             </div>
                                             <div class="col-md-12">
-                                                <p class="text_basic  ">+поиск жилья</p>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <p class="text_basic ">+поиск работы</p>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <p class="text_basic ">Поддержка по всем вопросам 24/7</p>
+                                                <p class="text_big">39 900 ₸ (KZT)</p>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-10">
+                                        <div class="row gap_row_max">
+                                            <div class="col-12">
+                                                <div class="row gap_row_min">
+                                                    <div class="col-md-12">
+                                                        <p class="text_basic">Индивидуальная работа</p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="text_basic">Консультация</p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="text_basic">Бронь отеля</p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="text_basic">Маршрутный лист</p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="text_basic">Бронь обратного билета</p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="text_basic">Помощь в прохождении таможни</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-11">
+                                                <div class="row gap_row_min px-3">
+                                                    <div class="col-md-12">
+                                                        <p class="text_basic  ">+трансфер с аэропорта </p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="text_basic  ">+поиск жилья</p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="text_basic ">+поиск работы</p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="text_basic ">Поддержка по всем вопросам 24/7</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 button_center_media"><button>Оставить заявку</button></div>
                                 </div>
+
                             </div>
-                            <div class="col-md-12"><button class="price__button ">Оставить заявку</button></div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -585,33 +642,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-12 bg_silver px-5">
-                    <div class="row p-5 ">
-                        <div class="col-md-12 px-md-4 p-0">
-                            <h2 class="form__title pb-3">Остались вопросы? <br><span class="text_red">Закажите
+                <div class="col-lg-5 col-12 bg_silver p-5">
+                    <div class="row">
+                        <div class="col-md-12 px-md-4 button_center_media">
+                            <h2 class="form__title pb-5">Остались вопросы? <br><span class="text_red">Закажите
                                     звонок</span></h2>
                         </div>
-                        <div class="col-md-12 px-md-4 p-0">
-                            <form method="post" action="#" class="gap_row_min">
-                                <input type="text" placeholder="Имя">
-                                <input class="mb-2" type="email" placeholder="E-mail">
-                                <select id="messendger" name="messendger">
+                        <div class="col-md-12 px-md-4   button_center_media">
+                            <form method="post"  class="gap_row_min" id="form" action="#"> 
+                                <input class="mb-2" type="email" placeholder="E-mail" id="email">
+                                <select id="messenger">
                                     <option value="WhatsApp">WhatsApp</option>
                                     <option value="Telegram">Telegram</option>
                                     <option value="Post">Почта</option>
                                     <option value="KakaoTolk">KakaoTolk</option>
                                 </select>
 
-                                <input type="text" placeholder="Номер телефона месседжера">
-                                <div class="gap_row_min">
-                                    <label>Вы сейчас находитесь <span class="text_red">в Корее?</span></label><br>
-                                    <input name="red_radio" type="radio" id="InKorea">
-                                    <label for="InKorea">Да</label> <br>
-                                    <input name="red_radio" type="radio" id="NotInKorea" checked>
-                                    <label for="NotInKorea">Нет</label>
-
+                                <input type="text" placeholder="Номер телефона мессенжера" id="tel">
+                                <div >
+                                    <p class="pb-3 text_small">Вы сейчас находитесь <span class="text_red">в Корее?</span></p>
+                                    <div class="items_center py-2">
+                                        <input type="radio" id="InKorea" value="В Корее">
+                                        <label for="InKorea">Да</label>
+                                    </div>
+                                    <div class="items_center">
+                                        <input type="radio" id="NotInKorea" checked value="Не в Корее">
+                                        <label for="NotInKorea">Нет</label>
+                                    </div>
                                 </div>
-                                <input type="submit" value="Оставить заявку">
+                                <p><output id="text"> </output> </p>
+                                <p><output id="text"> </output> </p>
+                                <input type="submit" value="Оставить заявку" id="submit_form">
                                 <p>Нажимая кнопку «Отправить», Вы соглашаетесь
                                     с Политикой обработки персональных данных</p>
                             </form>
@@ -621,26 +682,19 @@
             </div>
         </div>
     </section>
-    <footer class="bg_black">
+    <footer id="contact" class="bg_black">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-3 px-5 col-9">
+                <div class="col-lg-3 col-md-5 col-8 px-5 ">
                     <div class="row justify-content-between">
                         <div class="col-4"><a href="#"><img src="image\telegram_footer.png"></a> </div>
                         <div class="col-4"><a href="#"><img src="image\facebook_footer.png"></a> </div>
                         <div class="col-4"><a href="#"><img src="image\youtube_footer.png"></a> </div>
-                        
-                        
-                        
-
                     </div>
-
                 </div>
             </div>
         </div>
-
     </footer>
-
+    <script src="script\index.js"></script>
 </body>
-
 </html>
