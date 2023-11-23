@@ -14,14 +14,14 @@ let submitForm = document.getElementById("submit_form");
 
 
 
-submitForm.addEventListener('submit', function(event){
+submitForm.addEventListener('click', function(event){
     event.preventDefault();
 
     
     const form = event.target;
     const formFields = form.elements;
     const data = {
-        name: formFields.name.value,
+        username: formFields.username.value,
         email: formFields.email.value,
         messenger: formFields.messenger.value,
         number: formFields.tel.value,
@@ -58,5 +58,25 @@ for (let i = 0; i<formChild.length; i++){
        
     })
 }
+
+
+const details = document.querySelectorAll("details");
+
+// добавить к каждому клику события клика
+[...details].forEach((targetDetail) => {
+  targetDetail.addEventListener("click", _ => {
+    // закрывать всех кроме кликнутого
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+      }
+    });
+  });
+});
+
+
+
+
+
 
 
