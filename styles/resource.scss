@@ -1,0 +1,30 @@
+/* header */
+header {
+  position: fixed;
+  z-index: 1100;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom:10px;
+  background-color: transparent;
+
+
+  &.scrolled{
+    .line{
+      background-color: #bababa;
+    }
+    .nav__mobile a {
+      color: #fff !important;
+    }
+    .nav-link {
+      color: #000 !important;
+    }
+    .toolbar_name {
+      color: #ee3639 !important;
+    }
+    .btn {
+      border: 1px solid #000 !important;
+    }
+  }
+}

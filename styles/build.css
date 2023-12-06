@@ -1,0 +1,28 @@
+/* header */
+header {
+  position: fixed;
+  z-index: 1100;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+header.scrolled .line {
+  background-color: #bababa;
+}
+header.scrolled .nav__mobile a {
+  color: #fff !important;
+}
+header.scrolled .nav-link {
+  color: #000 !important;
+}
+header.scrolled .toolbar_name {
+  color: #ee3639 !important;
+}
+header.scrolled .btn {
+  border: 1px solid #000 !important;
+}
+
+/*# sourceMappingURL=build.css.map */

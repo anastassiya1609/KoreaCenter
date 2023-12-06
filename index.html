@@ -7,49 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image\4060511.png">
-    <link rel="stylesheet" href="styles\style.css">
+    <link rel="stylesheet" href="styles\build.css">
     <link rel="stylesheet" href="styles\\bootstrap-grid.min.css">
+    
+<!-- sass styles/resource.scss styles/build.css -->
 </head>
 <!-- ctr + shift +l    выравнивание кода-->
 <!-- ctr + d    дублирование кода-->
 
 <body class="page">
-    <header class="bg_gradient">
+    <header id="header_scroll">
         <div class="container">
             <div class="row  align-items-center">
-                <div class="col-lg-2 col-md-0">
-                    <p class="toolbar_name"> Виза <br>в Южную Корею</p>
+                <div class="col-md-2 col-6 ">
+                    <a href="#offer" class="toolbar_name"><img src="image\logo.png"></a>
                 </div>
-                <div class="col-lg-7 col-md-9">
-                    <div class="row  text_center d-none d-md-flex">
-                        <div class="col-3"><a href="#statistiсs">О нас</a></div>
-                        <div class="col-3"><a href="#advantages">Преимущества</a></div>
-                        <div class="col-3"><a href="#">Отзывы</a></div>
-                        <div class="col-3"><a href="#contact">Контакты</a></div>
+                <div class="col-md-7 d-none d-md-block">
+                    <div class="row  text_center">
+                        <div class="col-3"><a href="#statistiсs" class="nav-link">О нас</a></div>
+                        <div class="col-3"><a href="#advantages" class="nav-link">Преимущества</a></div>
+                        <div class="col-3"><a href="#feedback" class="nav-link">Отзывы</a></div>
+                        <div class="col-3"><a href="#contact" class="nav-link">Контакты</a></div>
                     </div>
-                    <nav class="header__nav nav-bar bg_gradient d-md-none">
-                        <div class="toggle-menu ">
-                            <div class="line line1"></div>
-                            <div class="line line2"></div>
-                            <div class="line line3"></div>
-                        </div>
-                        <ul class="nav-list">
-                            <li class="nav-list-item"><a href="" class="nav-link">О нас</a></li>
-                            <li class="nav-list-item"><a href="" class="nav-link">Преимущества</a></li>
-                            <li class="nav-list-item">
-                                <a href="" class="nav-link">Отзывы</a>
-                            </li>
-                            <li class="nav-list-item"><a href="" class="nav-link">Контакты</a></li>
-                        </ul>
-                    </nav>
                 </div>
-                <div class="col-md-3 col-7">
-                    <div>
-                        <a href="#form"><button>Задать вопрос</button></a>
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="d-flex justify-content-end">
+                        <a href="#lead" class="nav-link btn">Задать вопрос</a>
+                    </div>
+                </div>
+                <div class="col-6 d-md-none d-flex justify-content-end">
+                    <div class="toggle-menu-button">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                        <div class="line line3"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <nav class="nav__mobile bg_gradient d-md-none">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#statistiсs" class="nav-link ">О нас</a></li>
+                <li class="nav-list-item"><a href="#advantages" class="nav-link">Преимущества</a></li>
+                <li class="nav-list-item">
+                    <a href="" class="nav-link">Отзывы</a>
+                </li>
+                <li class="nav-list-item"><a href="#contact" class="nav-link">Контакты</a></li>
+                <li class="nav-list-item"><a href="#contact" class="nav-link">Задать вопрос</a></li>
+            </ul>
+        </nav>
     </header>
     <section id="offer" class="py-5 bg_gradient">
         <div class="container">
@@ -63,7 +68,7 @@
                             <div class="row button_center_media">
                                 <div class="col-8">
                                     <div class="button_center_media">
-                                        <a href="#form"><button>Оставить заявку</button></a>
+                                        <button class="popup_open btn">Оставить заявку</button>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +87,8 @@
     </section>
 
 
-    <section id="advantages" class="bg_silver py-5">
+
+    <section id="advantages" class="bg_silver">
         <div class="container">
             <div class="row">
                 <div class="col-12 ">
@@ -143,18 +149,19 @@
             </div>
     </section>
 
-    <section id="statistiсs" class="py-5">
+    <section id="statistiсs">
         <div class="container">
             <div class="row  ">
-                <div class="col-12">
-                    <h2 class="section__title text_red">Наша компания помогает с получением<br> виз в Южную Корею c 2019
+                <div class="col-lg-8">
+                    <h2 class="section__title text_red">Наша компания помогает с получением виз в Южную Корею c 2019
                         года</h2>
                 </div>
                 <div class="row gap_row_max">
                     <div class="col-md-6">
                         <div class="row   gap_colum_max">
                             <div class="col-xl-4 col-6">
-                                <p class="text_basic">Успешно одобреных K-ETA</p>
+                                <p class="text_basic">Успешно одобреных <nobr>K-ETA</nobr>
+                                </p>
                             </div>
                             <div class="col-4">
                                 <p class="text_basic text_red ">97.5 %</p>
@@ -164,7 +171,8 @@
                     <div class="col-md-6">
                         <div class="row    gap_colum_max">
                             <div class="col-xl-4 col-6">
-                                <p class="text_basic">Отказы в получении K-ETA</p>
+                                <p class="text_basic">Отказы в получении <nobr>K-ETA</nobr>
+                                </p>
                             </div>
                             <div class="col-4">
                                 <p class="text_basic text_red">2.5 %</p>
@@ -201,19 +209,24 @@
 
     <section id="telegram" class="bg_red py-4">
         <div class="container bg_red">
-            <div class="row align-items-center gy-4   ">
-                <div class="col-md-10">
+            <div class="row align-items-center justify-content-center gy-4   ">
+                <div class="col-lg-8 col-12">
                     <p class="text_basic text_white">Ведем канал в Telegram с 12 марта 2020 года, где регулярно
                         публикуем актуальную информацию по визе G1 </p>
                 </div>
-                <div class="col-md-1 col-2">
-                    <a href="https://t.me/prosto_visa"><img class="icon_basic" src="image\telegram.png"></a>
+                <div class="col-lg-4 col-12">
+                    <a href="https://t.me/prosto_visa"><button class="btn">
+                            <p>Перейти в телеграм канал </p><img class="icon_telegram" src="image\telegram.png">
+                        </button></a>
+
+
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="application-methods" class="bg_silver py-5">
+    <section id="application-methods" class="bg_silver">
         <div class="container">
             <div class="row ">
                 <div class="col-12">
@@ -249,7 +262,7 @@
         </div>
     </section>
 
-    <section id="visa_countries" class="py-5">
+    <section id="visa_countries">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -258,16 +271,16 @@
                 <div class="row ">
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-md-12 border_bottom_red">
+                            <div class="col-md-12 border_bottom_red mb-4">
                                 <div class="row">
-                                    <div class="col-md-12 content_center_media"><img class=icon_flag
+                                    <div class="col-md-12 content_center_media "><img class=icon_flag
                                             src="image\russia.png "></div>
                                     <div class="col-md-8">
                                         <p class="text_basic">Граждане России могут оформить: К-ЕТА и Тур.визу</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 border_bottom_red">
+                            <div class="col-md-12 border_bottom_red mb-4">
                                 <div class="row">
                                     <div class="col-md-12 content_center_media"><img class=icon_flag
                                             src="image\kazakhstan.png"></div>
@@ -281,7 +294,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-md-12 border_bottom_red">
+                            <div class="col-md-12 border_bottom_red mb-4">
                                 <div class="row ">
                                     <div class="col-md-12 content_center_media"><img class=icon_flag
                                             src="image\ukraine.png"></div>
@@ -291,7 +304,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 border_bottom_red">
+                            <div class="col-md-12 border_bottom_red mb-4">
                                 <div class="row ">
                                     <div class="col-md-12 content_center_media">
                                         <img class=icon_flag src="image\tajikistan.png">
@@ -311,8 +324,46 @@
             </div>
         </div>
     </section>
+    <section id="feedback" class="bg_silver">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section__title">Отзывы наших клиентов</h2>
+                </div>
+                <div class="row review-box">
+                    <div class="review col-lg-11 col-12">
+                        <div class="row gap_row_max  ">
+                            <div class="col-md-4 review-box">
+                                <img src="image\feedback\feedback 1.png">
+                            </div>
+                            <div class="col-md-4 review-box">
+                                <img src="image\feedback\feedback 2.png">
+                            </div>
+                            <div class="col-md-4 review-box">
+                                <img src="image\feedback\feedback 3.png">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="review col-12">
+                        <div class="row gap_row_max">
+                            <div class="col-md-4 review-box">
+                                <img src="image\feedback\feedback 4.png">
+                            </div>
+                            <div class="col-md-4 review-box">
+                                <img src="image\feedback\feedback 5.png">
+                            </div>
+                        </div>
+                    </div> 
+                    <button class="prev">&lsaquo;</button>
+                    <button class="next">&rsaquo;</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
-    <section id="help" class="py-5">
+    <section id="help">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -359,7 +410,7 @@
         </div>
     </section>
 
-    <section id="services" class="bg_silver py-5">
+    <section id="services" class="bg_silver ">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -418,7 +469,7 @@
         </div>
     </section>
 
-    <section id="price" class="py-5">
+    <section id="price">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -446,7 +497,8 @@
                                     <div class="col-md-10">
                                         <div class="row gap_row_min">
                                             <div class="col-md-12">
-                                                <p class="text_basic">Подача заявки K-ETA</p>
+                                                <p class="text_basic">Подача заявки <nobr>K-ETA</nobr>
+                                                </p>
                                             </div>
                                             <div class="col-md-12">
                                                 <p class="text_basic">Консультация</p>
@@ -457,7 +509,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12 button_center_media">
-                                        <button>Оставить заявку</button>
+                                        <button class="popup_open btn">Оставить заявку</button>
                                     </div>
                                 </div>
 
@@ -491,7 +543,8 @@
                                                     таможню в Корее</p>
                                             </div>
                                             <div class="col-md-12">
-                                                <p class="text_basic">Подача заявки K-ETA</p>
+                                                <p class="text_basic">Подача заявки <nobr>K-ETA</nobr>
+                                                </p>
                                             </div>
                                             <div class="col-md-12">
                                                 <p class="text_basic">Консультация</p>
@@ -510,7 +563,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 button_center_media"><button>Оставить заявку</button></div>
+                                    <div class="col-md-12 button_center_media"><button class="popup_open btn">Оставить
+                                            заявку</button></div>
                                 </div>
 
                             </div>
@@ -523,13 +577,13 @@
                                 <div class="row border_shadow gap_row_max p-4">
                                     <div class="col-md-10">
                                         <div class="row gap_row_min">
-                                                <div class="col-md-12">
-                                                    <p class="text_big">Максимальный</p>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <p class="text_small text_silver text_line-through">50 000 ₸ (KZT)
-                                                    </p>
-                                                </div>
+                                            <div class="col-md-12">
+                                                <p class="text_big">Максимальный</p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="text_small text_silver text_line-through">50 000 ₸ (KZT)
+                                                </p>
+                                            </div>
                                             <div class="col-md-12">
                                                 <p class="text_big">39 900 ₸ (KZT)</p>
                                             </div>
@@ -577,7 +631,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 button_center_media"><button>Оставить заявку</button></div>
+                                    <div class="col-md-12 button_center_media"><button class="popup_open btn">Оставить
+                                            заявку</button></div>
                                 </div>
 
                             </div>
@@ -603,30 +658,34 @@
 
                                     <details class="popular-questions">
                                         <summary>Какой шанс одобрения заявки K-ETA?</summary>
-                                        <p class="mt-4 ">- Шанс одобрения не возможно рассчитать, так как заявку
+                                        <p class="mt-4 col-11">- Шанс одобрения не возможно рассчитать, так как заявку
                                             оценивает робот. Наша команда пришла к выводу, что шанс получения отказа
-                                            по K-ETA увеличивается в туристическое время. И наоборот, если маленький
+                                            по <nobr>K-ETA</nobr> увеличивается в туристическое время. И наоборот, если
+                                            маленький
                                             тур.поток в Корею шанс одобрения будет максимально высоким.</p>
                                     </details>
                                     <details class="popular-questions">
                                         <summary>Сложно ли получить Туристическую Визу?</summary>
-                                        <p class="mt-4  "> - Нет, нужно просто собрать все документы. Остальное мы можем
+                                        <p class="mt-4  col-11"> - Нет, нужно просто собрать все документы. Остальное мы
+                                            можем
                                             сделать за вас, вам даже не придется никуда ехать. Шанс одобрения очень
                                             высокий.</p>
                                     </details>
                                     <details class="popular-questions">
                                         <summary>Точно ли меня пустят в Корею?</summary>
-                                        <p class="mt-4 ">- Да, мы поможем вам со 100% гарантией попасть в Южную
+                                        <p class="mt-4 col-11">- Да, мы поможем вам со 100% гарантией попасть в Южную
                                             Корею.</p>
                                     </details>
                                     <details class="popular-questions">
                                         <summary>Нужно ли оплачивать отель и покупать обратный билет?</summary>
-                                        <p class="mt-4 ">- Нет, мы все забронируем и отправим необходимые документы,
+                                        <p class="mt-4 col-11">- Нет, мы все забронируем и отправим необходимые
+                                            документы,
                                             подтверждающие наличие отеля и обратного билета.</p>
                                     </details>
                                     <details class="popular-questions">
                                         <summary>На какой срок даются визы?</summary>
-                                        <p class="mt-4 ">- K-ETA - 60 дней + 30 дней присутствия в стране в течении 180
+                                        <p class="mt-4 col-11">- K-ETA - 60 дней + 30 дней присутствия в стране в
+                                            течении 180
                                             дней.
                                             Электронное расширение на въезд действует в течении 3-х лет, с момента
                                             получения.
@@ -637,40 +696,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-12 bg_silver p-5">
+                <div class="col-lg-5 col-12 bg_silver p-5" id="lead">
                     <div class="row">
                         <div class="col-md-12 px-md-4 button_center_media">
                             <h2 class="form__title pb-5">Остались вопросы? <br><span class="text_red">Закажите
                                     звонок</span></h2>
                         </div>
                         <div class="col-md-12 px-md-4   button_center_media">
-                            <form method="post" class="gap_row_min" id="form" action="#">
-                                <input type="text" placeholder="Имя" id="username">
-                                <input class="mb-2" type="email" placeholder="E-mail" id="email">
-                                <select id="messenger">
+                            <form method="post" class="gap_row_min" id="form_main" action="#">
+                                <input type="text" placeholder="Имя" name="username" required>
+                                <input class="mb-2" type="email" placeholder="E-mail" name="email" required>
+                                <select name="messenger">
                                     <option value="WhatsApp">WhatsApp</option>
                                     <option value="Telegram">Telegram</option>
                                     <option value="Post">Почта</option>
                                     <option value="KakaoTolk">KakaoTolk</option>
                                 </select>
 
-                                <input type="text" placeholder="Номер телефона мессенжера" id="tel">
-                                <div>
-                                    <p class="pb-3 text_small">Вы сейчас находитесь <span class="text_red">в
-                                            Корее?</span></p>
-                                    <div class="items_center py-2">
-                                        <input type="radio" id="InKorea" value="В Корее">
-                                        <label for="InKorea">Да</label>
+                                <input type="number" placeholder="Номер телефона мессенжера" name="tel" required>
+                                <p class="pb-3 text_small">Где вы находитесь в данный момент?</p>
+                                <div class="select_radio">
+                                    <div class="radio_item ">
+                                        <input type="radio" name="place" value="В Корее" id="inKorea"
+                                            class="selector-item_radio">
+                                        <label for="inKorea" class="selector-item_label">В Корее</label>
                                     </div>
-                                    <div class="items_center">
-                                        <input type="radio" id="NotInKorea" checked value="Не в Корее">
-                                        <label for="NotInKorea">Нет</label>
+                                    <div class="radio_item">
+                                        <input type="radio" name="place" value="Не в Корее" id="notInKorea"
+                                            class="selector-item_radio" checked>
+                                        <label for="notInKorea" class="selector-item_label">Не в Корее</label>
                                     </div>
                                 </div>
-                                <p><output id="text"> </output> </p>
-                                <p><output id="text"> </output> </p>
-                                <input type="submit" value="Оставить заявку" id="submit_form">
-                                <p>Нажимая кнопку «Отправить», Вы соглашаетесь
+                                <output class="text_small form_success-message"> </output>
+                                <output class="text_small form_error-message"> </output>
+                                <input type="submit" value="Оставить заявку" class="form_submit">
+                                <p>Нажимая кнопку «Оставить заявку», Вы соглашаетесь
                                     с Политикой обработки персональных данных</p>
                             </form>
                         </div>
@@ -679,6 +739,40 @@
             </div>
         </div>
     </section>
+    <div id="popup_bg" class="popup_hidden">
+        <div class="popup col-lg-5 col-sm-8 col-11">
+            <div><img id="popup_close" src="image\minus.png"></div>
+            <span class="col-10">Введите необходимые данные и мы обязательно с вами свяжемся!</span>
+            <form method="post" class="gap_row_min" id="form_popup" action="#">
+                <input type="text" placeholder="Имя" name="username" required>
+                <input class="mb-2" type="email" placeholder="E-mail" name="email" required>
+                <select name="messenger">
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Telegram">Telegram</option>
+                    <option value="Post">Почта</option>
+                    <option value="KakaoTolk">KakaoTolk</option>
+                </select>
+                <input type="number" placeholder="Номер телефона мессенжера" name="tel" required>
+                <p class="pb-3 text_small">Где вы находитесь в данный момент?</p>
+                <div class="select_radio">
+                    <div class="radio_item ">
+                        <input type="radio" name="place" value="В Корее" id="inKoreaPopup" class="selector-item_radio">
+                        <label for="inKoreaPopup" class="selector-item_label">В Корее</label>
+                    </div>
+                    <div class="radio_item">
+                        <input type="radio" name="place" value="Не в Корее" id="notInKoreaPopup"
+                            class="selector-item_radio" checked>
+                        <label for="notInKoreaPopup" class="selector-item_label">Не в Корее</label>
+                    </div>
+                </div>
+                <output class="text_small form_success-message"> </output>
+                <output class="text_small form_error-message"> </output>
+                <input type="submit" value="Оставить заявку" class="form_submit">
+                <p>Нажимая кнопку «Оставить заявку», Вы соглашаетесь
+                    с Политикой обработки персональных данных</p>
+            </form>
+        </div>
+    </div>
     <footer id="contact" class="bg_black">
         <div class="container">
             <div class="row justify-content-center">
