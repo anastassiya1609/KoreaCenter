@@ -481,7 +481,7 @@ p {
   padding: 0;
   justify-content: center;
 }
-.review-box button {
+/* .review-box button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,7 +496,7 @@ p {
   outline: none;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 .review-box .prev {
   left: 10px;
 }
