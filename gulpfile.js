@@ -3,18 +3,18 @@ const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const cleanCSS = require("gulp-clean-css");
 // const sourcemaps = require('gulp-sourcemaps');
-const babel = require('gulp-babel');
-const ts = require('gulp-typescript');
+// const babel = require('gulp-babel');
+// const ts = require('gulp-typescript');
 
 
-function js(cb) {
-  gulp.src("./src/*.ts")
-    .pipe(ts())
-		// .pipe(babel({
-		// 	presets: ['@babel/preset-env']
-		// }))
-		.pipe(gulp.dest('script'))
-}
+// function js(cb) {
+//   gulp.src("./src/*.ts")
+//     .pipe(ts())
+// 		// .pipe(babel({
+// 		// 	presets: ['@babel/preset-env']
+// 		// }))
+// 		.pipe(gulp.dest('script'))
+// }
 
 
 
@@ -26,11 +26,10 @@ function css(cb) {
       // .pipe(concat('main.css'))
       .pipe(
         cleanCSS({
-          format: 'beautify',
+          // format: 'beautify',
           compatibility: "ie10",
           level: 2,
-          inline: ['none'],
-
+          // inline: ['none'],
           removeDuplicateRules: true,
         })
       )
