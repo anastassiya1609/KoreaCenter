@@ -1,5 +1,15 @@
 {
-  "dependencies": {
+  "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^5.3.3"
   }
 }
